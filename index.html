@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Contabilidade especializada para nutricionistas. Reduza impostos de 27,5% para menos de 11% no Simples Nacional. CNPJ em 5 dias, 100% digital, suporte WhatsApp. Atendemos todo o Brasil.">
+<meta name="keywords" content="nutricionista, contabilidade, imposto, simples nacional, cnpj, mei, autonomo, alíquota">
+<meta name="author" content="Eleven Contabilidade">
+<meta name="theme-color" content="#780000">
+<meta property="og:title" content="Eleven Contabilidade | Especialista para Nutricionistas">
+<meta property="og:description" content="Reduza seus impostos de 27,5% para menos de 11%. CNPJ em 5 dias, 100% digital.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://elevencontabilidade.com.br">
+<meta property="og:image" content="https://elevencontabilidade.com.br/og-image.jpg">
+<title>Eleven Contabilidade | Especialista para Nutricionistas | Reduza Impostos</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --vm:#1c0000;
+  --vp:#780000;
+  --vm2:#761a1a;
+  --dou:#b98f32;
+  --dou2:#e2c26c;
+  --dou3:#f5edcf;
+  --br:#fafaf8;
+  --cl:#f2f0eb;
+  --cl2:#eae6de;
+  --ct:#6b5b5b;
+  --tx:#1a1a1a;
+  --ft:'Playfair Display',Georgia,serif;
+  --fc:'DM Sans',sans-serif;
+  --success:#2d7a4a;
+  --warning:#d4a574;
+}
+html{scroll-behavior:smooth}
+body{font-family:var(--fc);background:var(--br);color:var(--tx);line-height:1.6;font-size:16px}
+
+/* ACESSIBILIDADE */
+@media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+/* BARRA URGÊNCIA */
+.barra{background:var(--vm);color:rgba(255,255,255,.7);text-align:center;padding:10px 20px;font-size:12.5px;letter-spacing:.04em}
+.barra strong{color:var(--dou2);font-weight:600}
+
+/* HEADER */
+header{background:var(--vp);border-bottom:2px solid rgba(185,143,50,.2);padding:16px 60px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:100;box-shadow:0 2px 8px rgba(28,0,0,.06)}
+.logo-img{height:48px;width:auto;display:block}
+.h-cta{background:var(--dou);color:var(--vm);border:none;padding:12px 26px;font-family:var(--fc);font-size:13px;font-weight:500;cursor:pointer;text-decoration:none;letter-spacing:.04em;transition:background .2s,transform .15s;border-radius:4px}
+.h-cta:hover,.h-cta:focus{background:var(--dou2);transform:translateY(-1px);outline:2px solid var(--vm);outline-offset:2px}
+
+/* HERO */
+.hero{display:grid;grid-template-columns:1.1fr .9fr;min-height:90vh}
+
+.hero-e{
+  background:var(--vp);
+  background-image:radial-gradient(ellipse at 18% 45%,#9a1010 0%,#780000 40%,#1c0000 100%);
+  padding:80px 70px 80px 80px;
+  display:flex;flex-direction:column;justify-content:center;
+  position:relative;overflow:hidden;
+}
+.hero-e::before{content:"";position:absolute;top:-100px;right:-100px;width:360px;height:360px;border:1px solid rgba(185,143,50,.1);border-radius:50%}
+.hero-e::after{content:"";position:absolute;bottom:-140px;left:-60px;width:440px;height:440px;border:1px solid rgba(185,143,50,.06);border-radius:50%}
+
+.tag{display:inline-flex;align-items:center;gap:10px;color:var(--dou2);font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;margin-bottom:28px;position:relative;z-index:1}
+.tag::before{content:"";display:block;width:28px;height:1px;background:var(--dou)}
+.hero-ei{font-family:var(--ft);font-size:clamp(42px,5vw,72px);font-weight:900;color:#fff;letter-spacing:-.01em;margin-bottom:8px;position:relative;z-index:1;line-height:1}
+
+.h-titulo{font-family:var(--ft);font-size:clamp(38px,4vw,60px);font-weight:900;color:#fff;line-height:1.1;margin-bottom:24px;position:relative;z-index:1}
+.h-titulo .dest{color:var(--dou2);font-style:italic;display:block}
+
+.h-sub{font-size:15px;color:rgba(255,255,255,.65);line-height:1.75;margin-bottom:40px;max-width:420px;position:relative;z-index:1}
+
+.hero-cta{position:relative;z-index:1;max-width:400px}
+.btn-p{display:block;background:var(--dou);color:var(--vm);padding:18px 36px;border:none;font-family:var(--fc);font-size:15px;font-weight:600;cursor:pointer;text-decoration:none;text-align:center;letter-spacing:.03em;transition:background .2s,transform .15s;margin-bottom:10px;border-radius:4px;font-weight:700}
+.btn-p:hover,.btn-p:focus{background:var(--dou2);transform:translateY(-1px);outline:2px solid var(--vm);outline-offset:2px}
+.h-garantia{font-size:11px;color:rgba(255,255,255,.3);letter-spacing:.03em}
+
+/* HERO DIREITA */
+.hero-d{background:var(--cl);padding:72px 72px 72px 52px;display:flex;flex-direction:column;justify-content:center;gap:14px;position:relative;overflow:hidden}
+.hero-d::before{
+  content:"27%";
+  font-family:var(--ft);font-size:180px;font-weight:900;
+  color:rgba(120,0,0,.06);
+  position:absolute;right:-20px;top:50%;transform:translateY(-50%);
+  line-height:1;pointer-events:none;
+}
+.dor{background:var(--br);border-left:3px solid var(--dou);padding:22px 24px;position:relative;z-index:1}
+.dor-p{font-family:var(--ft);font-size:18px;font-weight:700;color:var(--vp);margin-bottom:7px}
+.dor-r{font-size:13.5px;color:var(--ct);line-height:1.65}
+
+/* NÚMEROS */
+.numeros{background:var(--vp);background-image:radial-gradient(ellipse at center,#8a0808,#780000 50%,#1c0000);padding:52px 80px;display:grid;grid-template-columns:repeat(4,1fr)}
+.n-item{text-align:center;padding:24px 16px;border-right:1px solid rgba(185,143,50,.14)}
+.n-item:last-child{border-right:none}
+.n-num{font-family:var(--ft);font-size:50px;font-weight:900;color:var(--dou2);line-height:1;margin-bottom:8px}
+.n-lab{font-size:11px;color:rgba(255,255,255,.48);letter-spacing:.08em;text-transform:uppercase}
+
+/* COMUM */
+.lbl{font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--dou);margin-bottom:14px;display:flex;align-items:center;gap:10px}
+.lbl::before{content:"";display:block;width:24px;height:1px;background:var(--dou)}
+.ts{font-family:var(--ft);font-size:clamp(28px,3vw,44px);font-weight:700;color:var(--vp);margin-bottom:14px;line-height:1.2}
+.ss{font-size:16px;color:var(--ct);max-width:620px;line-height:1.75;margin-bottom:52px}
+
+/* PROBLEMA */
+.s-prob{background:var(--cl);padding:80px}
+.g-prob{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:1040px}
+.c-prob{background:var(--br);border:1px solid rgba(120,0,0,.09);border-top:2px solid var(--vp);padding:32px 26px}
+.c-prob .nc{font-family:var(--ft);font-size:52px;font-weight:900;color:var(--vp);opacity:.07;line-height:1;margin-bottom:16px}
+.c-prob h3{font-family:var(--ft);font-size:20px;font-weight:700;color:var(--vp);margin-bottom:10px}
+.c-prob p{font-size:14px;color:var(--ct);line-height:1.72}
+
+/* COMPARAÇÃO */
+.s-comp{background:var(--br);padding:80px}
+.t-comp{max-width:780px;border:1px solid rgba(120,0,0,.11);overflow:hidden}
+.t-head{display:grid;grid-template-columns:2fr 1fr 1fr;background:var(--vp);padding:15px 28px}
+.t-head span{color:rgba(255,255,255,.85);font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;text-align:center}
+.t-head span:first-child{text-align:left}
+.t-lin{display:grid;grid-template-columns:2fr 1fr 1fr;padding:14px 28px;border-bottom:1px solid rgba(120,0,0,.07);align-items:center}
+.t-lin:last-child{border-bottom:none}
+.t-lin:nth-child(even){background:var(--cl)}
+.t-lin span{font-size:13.5px;color:var(--ct)}
+.t-lin span:first-child{color:var(--tx);font-weight:500}
+.sim{color:var(--success);font-weight:700;font-size:16px;display:flex;justify-content:center}
+.nao{color:rgba(120,0,0,.2);font-size:16px;display:flex;justify-content:center}
+
+/* SERVIÇOS */
+.s-serv{background:var(--vm);padding:80px}
+.s-serv .lbl{color:var(--dou)}
+.s-serv .lbl::before{background:var(--dou)}
+.s-serv .ts{color:#fff}
+.s-serv .ss{color:rgba(255,255,255,.46)}
+.g-serv{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(185,143,50,.08);border:1px solid rgba(185,143,50,.1);max-width:1040px}
+.c-serv{background:rgba(255,255,255,.03);padding:32px 28px;transition:background .2s}
+.c-serv:hover{background:rgba(185,143,50,.06)}
+.c-serv .sn{font-family:var(--ft);font-size:13px;font-weight:700;color:var(--dou);letter-spacing:.08em;margin-bottom:14px;opacity:.7}
+.c-serv h3{font-size:15px;font-weight:500;color:#fff;margin-bottom:10px}
+.c-serv p{font-size:13px;color:rgba(255,255,255,.42);line-height:1.72}
+
+/* CALCULADORA */
+.s-calc{background:var(--cl);padding:80px;text-align:center}
+.calc-box{background:var(--br);border:1px solid rgba(120,0,0,.1);border-top:3px solid var(--vp);padding:52px;max-width:680px;margin:0 auto;text-align:left;border-radius:8px}
+.calc-t{font-family:var(--ft);font-size:28px;font-weight:700;color:var(--vp);margin-bottom:6px}
+.calc-s{font-size:14px;color:var(--ct);margin-bottom:36px}
+.cc{margin-bottom:20px}
+.cc label{display:block;font-size:11px;font-weight:600;color:var(--vp);letter-spacing:.07em;text-transform:uppercase;margin-bottom:8px}
+.cc input,.cc select{width:100%;padding:13px 16px;border:1px solid rgba(120,0,0,.18);font-family:var(--fc);font-size:15px;color:var(--tx);background:var(--br);outline:none;transition:border-color .2s;border-radius:4px}
+.cc input:focus,.cc select:focus{border-color:var(--vp);border-width:2px;padding:13px 15px}
+.calc-res{background:var(--dou3);border:1px solid rgba(185,143,50,.28);padding:28px;margin:28px 0;display:none;border-radius:6px}
+.calc-res.vis{display:block;animation:slideDown .3s ease-out}
+@keyframes slideDown{from{opacity:0;transform:translateY(-10px)}to{opacity:1;transform:translateY(0)}}
+.rg{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:20px}
+.ri{text-align:center}
+.rl{font-size:11px;color:var(--ct);text-transform:uppercase;letter-spacing:.1em;margin-bottom:6px;font-weight:600}
+.rv{font-family:var(--ft);font-size:32px;font-weight:700}
+.rv.ruim{color:#8a0000}
+.rv.bom{color:var(--success)}
+.eco{background:var(--vp);color:rgba(255,255,255,.95);padding:16px 20px;font-size:14px;line-height:1.6;text-align:center;border-radius:4px}
+.eco strong{color:var(--dou2);font-weight:700}
+.btn-calc{background:var(--vp);color:#fff;border:none;padding:16px;font-family:var(--fc);font-size:14px;font-weight:600;cursor:pointer;width:100%;letter-spacing:.04em;transition:background .2s;border-radius:4px}
+.btn-calc:hover,.btn-calc:focus{background:var(--vm);outline:2px solid var(--dou);outline-offset:2px}
+
+/* DEPOIMENTOS */
+.s-prova{background:var(--cl2);padding:80px}
+.g-dep{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:1040px}
+.c-dep{background:var(--br);border:1px solid rgba(120,0,0,.09);border-bottom:3px solid var(--dou);padding:28px 24px;border-radius:6px}
+.aspas{font-family:var(--ft);font-size:64px;color:var(--dou);opacity:.22;line-height:.6;margin-bottom:16px;display:block}
+.dep-tx{font-size:14px;color:var(--ct);line-height:1.75;font-style:italic;margin-bottom:20px}
+.dep-au{display:flex;align-items:center;gap:12px}
+.dep-av{width:38px;height:38px;border-radius:50%;background:var(--vp);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.9);font-size:13px;font-weight:600;flex-shrink:0}
+.dep-nm{font-size:13px;font-weight:600;color:var(--vp)}
+.dep-cg{font-size:11px;color:var(--ct)}
+
+/* DIFERENCIAIS */
+.s-dif{background:var(--br);padding:80px;display:flex;flex-direction:column;align-items:center;text-align:center}
+.g-dif{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;max-width:1040px;margin:0 auto;align-items:start;width:100%}
+.c-dif{background:var(--cl);border:1px solid rgba(120,0,0,.08);padding:28px 22px;position:relative;overflow:hidden;border-radius:6px;transition:transform .2s,box-shadow .2s}
+.c-dif:hover{transform:translateY(-4px);box-shadow:0 8px 16px rgba(120,0,0,.1)}
+.c-dif::before{content:"";position:absolute;top:0;left:0;width:100%;height:2px;background:linear-gradient(90deg,var(--vp),var(--dou))}
+.c-dif svg{width:32px;height:32px;stroke:var(--vp);fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;margin-bottom:16px;display:block}
+.c-dif h4{font-family:var(--ft);font-size:17px;font-weight:700;color:var(--vp);margin-bottom:8px}
+.c-dif p{font-size:13px;color:var(--ct);line-height:1.65}
+
+/* OFERTA */
+.s-ofer{background:var(--vp);background-image:radial-gradient(ellipse at center,#8a0808,#780000 50%,#1c0000);padding:100px 80px;text-align:center}
+.of-card{background:rgba(0,0,0,.2);border:1px solid rgba(185,143,50,.18);padding:60px 56px;max-width:700px;margin:0 auto;border-radius:8px}
+.of-tag{display:inline-block;border:1px solid var(--dou);color:var(--dou2);padding:8px 20px;font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;margin-bottom:28px;border-radius:20px}
+.of-titulo{font-family:var(--ft);font-size:clamp(30px,3.2vw,48px);font-weight:700;color:#fff;line-height:1.15;margin-bottom:20px}
+.of-titulo span{color:var(--dou2);font-style:italic}
+.of-tx{font-size:15px;color:rgba(255,255,255,.58);margin-bottom:36px;line-height:1.7}
+.of-lista{list-style:none;text-align:left;margin-bottom:40px;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.of-lista li{font-size:14px;color:rgba(255,255,255,.75);display:flex;align-items:center;gap:10px}
+.of-lista li::before{content:"✓";width:20px;height:20px;background:var(--success);border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;color:#fff;font-size:12px;font-weight:bold}
+.btn-of{display:block;background:var(--dou);color:var(--vm);padding:20px 48px;border:none;font-family:var(--fc);font-size:16px;font-weight:600;cursor:pointer;text-decoration:none;transition:background .2s,transform .15s;margin-bottom:14px;border-radius:4px}
+.btn-of:hover,.btn-of:focus{background:var(--dou2);transform:translateY(-2px);outline:2px solid #fff;outline-offset:2px}
+.of-info{font-size:12px;color:rgba(255,255,255,.28);letter-spacing:.04em}
+
+/* CERTIFICAÇÕES */
+.s-cert{background:var(--cl);padding:80px;text-align:center}
+.cert-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;max-width:900px;margin:0 auto}
+.cert-item{padding:30px;background:var(--br);border:1px solid rgba(120,0,0,.1);border-radius:6px}
+.cert-icon{font-size:40px;margin-bottom:15px}
+.cert-item h3{color:var(--vp);font-size:18px;margin-bottom:10px;font-family:var(--ft);font-weight:700}
+.cert-item p{color:var(--ct);font-size:14px;line-height:1.6}
+
+/* FAQ */
+.s-faq{padding:80px;background:var(--cl)}
+.faq-lista{max-width:700px;margin:0 auto}
+.faq-item{border-bottom:1px solid rgba(120,0,0,.1);padding:22px 0;cursor:pointer;transition:background .2s}
+.faq-p{font-size:15px;font-weight:500;color:var(--vp);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;user-select:none}
+.faq-p:hover{color:var(--vm)}
+.faq-i{font-family:var(--ft);font-size:26px;color:var(--dou);flex-shrink:0;transition:transform .3s;line-height:1}
+.faq-r{font-size:14px;color:var(--ct);line-height:1.75;max-height:0;overflow:hidden;transition:max-height .35s ease,padding .3s}
+.faq-item.aberto .faq-r{max-height:500px;padding-top:14px}
+.faq-item.aberto .faq-i{transform:rotate(45deg)}
+
+/* RODAPÉ */
+footer{background:var(--vm);padding:52px 80px 36px;display:flex;flex-direction:column;align-items:center;gap:16px;text-align:center}
+.f-logo{height:48px;width:auto;display:block}
+.f-div{width:40px;height:1px;background:rgba(185,143,50,.35);margin:2px auto}
+.f-tx{font-size:12px;color:rgba(255,255,255,.35);letter-spacing:.04em}
+
+/* WHATSAPP FLUTUANTE */
+.btn-fl{position:fixed;bottom:28px;right:28px;background:#25D366;color:#fff;border:none;border-radius:50px;padding:14px 22px;font-family:var(--fc);font-size:14px;font-weight:600;cursor:pointer;text-decoration:none;box-shadow:0 4px 20px rgba(37,211,102,.32);z-index:999;display:flex;align-items:center;gap:9px;transition:transform .2s,box-shadow .2s;border:none}
+.btn-fl:hover,.btn-fl:focus{transform:translateY(-2px);box-shadow:0 6px 28px rgba(37,211,102,.42);outline:2px solid rgba(255,255,255,.3);outline-offset:2px}
+.btn-fl svg{width:20px;height:20px}
+
+/* ANIMAÇÕES */
+@keyframes fadeUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+.hero-e>*{animation:fadeUp .65s ease forwards;opacity:0}
+.hero-e .tag{animation-delay:.1s}
+.hero-e .h-titulo{animation-delay:.25s}
+.hero-e .h-sub{animation-delay:.4s}
+.hero-e .hero-cta{animation-delay:.55s}
+
+/* RESPONSIVO */
+@media(max-width:960px){
+  header{padding:14px 22px}
+  .hero{grid-template-columns:1fr}
+  .hero-e{padding:60px 28px}
+  .hero-d{display:none}
+  .numeros{grid-template-columns:1fr 1fr;padding:36px 24px}
+  .s-prob,.s-comp,.s-serv,.s-calc,.s-prova,.s-dif,.s-ofer,.s-faq,.s-cert{padding:52px 24px}
+  footer{padding:40px 24px 28px}
+  .g-prob,.g-serv,.g-dep,.cert-grid{grid-template-columns:1fr}
+  .g-dif{grid-template-columns:1fr 1fr}
+  .of-lista{grid-template-columns:1fr}
+  .of-card{padding:32px 22px}
+  .rg{grid-template-columns:1fr}
+}
+
+@media(max-width:640px){
+  header{padding:12px 16px;flex-direction:column;gap:12px}
+  .h-cta{padding:10px 20px;font-size:12px}
+  .hero-e{padding:40px 20px}
+  .numeros{grid-template-columns:repeat(2,1fr);padding:28px 16px;gap:16px}
+  .n-item{border-right:none;border-bottom:1px solid rgba(185,143,50,.14)}
+  .n-item:nth-child(2n){border-bottom:none}
+  .btn-fl{bottom:20px;right:20px;padding:12px 18px;font-size:13px}
+}
+</style>
+</head>
+<body>
+
+<div class="barra">
+  Atendimento 100% digital para nutricionistas em todo o Brasil &mdash;
+  <strong>WhatsApp: (85) 99427-6469</strong>
+</div>
+
+<header>
+  <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 60'%3E%3Ctext x='10' y='40' font-size='32' font-weight='bold' fill='white' font-family='Georgia'%3ELEVEN%3C/text%3E%3C/svg%3E" class="logo-img" alt="Eleven Contabilidade">
+  <a href="https://wa.me/5585994276469?text=Olá!+Vim+pelo+site+e+quero+saber+sobre+contabilidade+para+nutricionistas.+Pode+me+ajudar?" class="h-cta" target="_blank" rel="noopener noreferrer">Falar com especialista</a>
+</header>
+
+<section class="hero">
+  <div class="hero-e">
+    <div class="tag">Especialista para Nutricionistas</div>
+    <h1 class="hero-ei">Ei, Nutricionista!</h1>
+    <h2 class="h-titulo">
+      Pare de pagar
+      <span class="dest">27,5% de imposto</span>
+      todo mês.
+    </h2>
+    <p class="h-sub">
+      Nutricionista autônomo, você pode estar pagando quase o triplo de imposto que deveria. Com CNPJ no Simples Nacional, a alíquota pode cair para menos de 11%. A Eleven cuida de tudo.
+    </p>
+    <div class="hero-cta">
+      <a href="https://wa.me/5585994276469?text=Olá!+Vim+pelo+site+e+quero+pagar+menos+imposto+como+nutricionista.+Pode+me+ajudar?" class="btn-p" target="_blank" rel="noopener noreferrer">
+        Quero pagar menos imposto agora
+      </a>
+      <p class="h-garantia">✓ Sem fidelidade &nbsp; ✓ Sem taxa de adesão &nbsp; ✓ 100% digital</p>
+    </div>
+  </div>
+
+  <div class="hero-d">
+    <div class="dor">
+      <div class="dor-p">Quer um suporte contábil mais próximo?</div>
+      <div class="dor-r">Na Eleven você tem atendimento humanizado via WhatsApp, com respostas rápidas e acompanhamento de verdade.</div>
+    </div>
+    <div class="dor">
+      <div class="dor-p">Emite nota fiscal no regime correto?</div>
+      <div class="dor-r">A Eleven configura sua nota fiscal corretamente, no regime ideal para você pagar menos em qualquer município do Brasil.</div>
+    </div>
+    <div class="dor">
+      <div class="dor-p">Sabe quanto paga de imposto todo mês?</div>
+      <div class="dor-r">Como autônomo no carnê-leão, pode chegar a 27,5%. Com CNPJ, o cenário muda completamente.</div>
+    </div>
+  </div>
+</section>
+
+<div class="numeros" role="region" aria-label="Estatísticas principais">
+  <div class="n-item">
+    <div class="n-num">6%</div>
+    <div class="n-lab">Alíquota mínima no Simples</div>
+  </div>
+  <div class="n-item">
+    <div class="n-num">5 dias</div>
+    <div class="n-lab">Para abrir seu CNPJ</div>
+  </div>
+  <div class="n-item">
+    <div class="n-num">100%</div>
+    <div class="n-lab">Digital, sem sair do consultório</div>
+  </div>
+  <div class="n-item">
+    <div class="n-num">+500</div>
+    <div class="n-lab">Nutricionistas atendidas</div>
+  </div>
+</div>
+
+<section class="s-prob">
+  <div class="lbl">O problema que ninguém te conta</div>
+  <h2 class="ts">Por que nutricionistas pagam mais imposto do que deveriam</h2>
+  <p class="ss">A maioria dos nutricionistas autônomos opera no regime mais caro possível sem saber. Isso custa caro todo mês.</p>
+  <div class="g-prob">
+    <article class="c-prob">
+      <div class="nc">01</div>
+      <h3>Carnê-leão até 27,5%</h3>
+      <p>Quem atende como autônomo cai no carnê-leão da Receita Federal. A alíquota progressiva pode chegar a 27,5% sobre tudo que você recebe.</p>
+    </article>
+    <article class="c-prob">
+      <div class="nc">02</div>
+      <h3>Nota fiscal emitida errada</h3>
+      <p>Muitos nutricionistas emitem nota incorreta ou no regime errado, gerando autuação, multa e tributação indevida sem nem perceber.</p>
+    </article>
+    <article class="c-prob">
+      <div class="nc">03</div>
+      <h3>Contador sem tempo para você</h3>
+      <p>Escritórios genéricos atendem centenas de clientes. Você fica sem resposta rápida e sem orientação quando mais precisa de apoio.</p>
+    </article>
+  </div>
+</section>
+
+<section class="s-comp">
+  <div class="lbl">Por que a Eleven</div>
+  <h2 class="ts">O que a Eleven oferece para você</h2>
+  <p class="ss">Conheça os recursos e diferenciais da nossa assessoria especializada para profissionais de saúde.</p>
+  <div class="t-comp" role="table">
+    <div class="t-head" role="row">
+      <span role="columnheader">Critério</span>
+      <span role="columnheader">Eleven</span>
+      <span role="columnheader">Contabilidade Convencional</span>
+    </div>
+    <div class="t-lin" role="row"><span>Conhece a realidade do nutricionista</span><span class="sim" role="cell">✓</span><span class="nao" role="cell">✗</span></div>
+    <div class="t-lin" role="row"><span>Suporte via WhatsApp com resposta real</span><span class="sim" role="cell">✓</span><span class="nao" role="cell">✗</span></div>
+    <div class="t-lin" role="row"><span>Processo 100% digital</span><span class="sim" role="cell">✓</span><span class="nao" role="cell">✗</span></div>
+    <div class="t-lin" role="row"><span>Expertise em Simples Nacional para saúde</span><span class="sim" role="cell">✓</span><span class="nao" role="cell">✗</span></div>
+    <div class="t-lin" role="row"><span>Orientação proativa sobre economia fiscal</span><span class="sim" role="cell">✓</span><span class="nao" role="cell">✗</span></div>
+    <div class="t-lin" role="row"><span>Redução de alíquota de 27,5% para menos de 11%</span><span class="sim" role="cell">✓</span><span class="nao" role="cell">✗</span></div>
+    <div class="t-lin" role="row"><span>Abertura de empresa em até 5 dias úteis</span><span class="sim" role="cell">✓</span><span class="nao" role="cell">✗</span></div>
+  </div>
+</section>
+
+<section class="s-serv">
+  <div class="lbl">O que a Eleven faz por você</div>
+  <h2 class="ts">Tudo que um nutricionista precisa</h2>
+  <p class="ss">Do CNPJ ao suporte mensal. Você cuida dos seus pacientes, a gente cuida dos seus impostos.</p>
+  <div class="g-serv">
+    <article class="c-serv"><div class="sn">01 — Abertura</div><h3>Abertura de empresa</h3><p>CNPJ, alvará e enquadramento no regime ideal. Em até 5 dias úteis, sem burocracia.</p></article>
+    <article class="c-serv"><div class="sn">02 — Assessoria</div><h3>Assessoria contábil mensal</h3><p>Apuração de impostos, emissão de guias, DAS e livros fiscais. Você só assina e paga.</p></article>
+    <article class="c-serv"><div class="sn">03 — Transição</div><h3>Troca de contador</h3><p>Migração rápida sem custo extra. A Eleven solicita toda a documentação do contador anterior.</p></article>
+    <article class="c-serv"><div class="sn">04 — Fiscal</div><h3>Emissão de nota fiscal</h3><p>Configuração do emissor de NFS-e, orientação sobre ISS municipal e CNAE correto.</p></article>
+    <article class="c-serv"><div class="sn">05 — Regularização</div><h3>Regularização fiscal</h3><p>Pendências na Receita Federal, débitos, parcelamentos e recuperação da situação cadastral.</p></article>
+    <article class="c-serv"><div class="sn">06 — Digital</div><h3>Certificado digital</h3><p>Emissão e renovação do certificado A1 e A3 para emissão de notas e assinatura de documentos.</p></article>
+  </div>
+</section>
+
+<section class="s-calc">
+  <div class="lbl" style="justify-content:center">Ferramenta gratuita</div>
+  <h2 class="ts" style="text-align:center;margin:0 auto 12px">Calcule sua economia agora</h2>
+  <p class="ss" style="margin:0 auto 40px;text-align:center">Descubra quanto você paga hoje e quanto pagaria com CNPJ no Simples Nacional.</p>
+  <div class="calc-box">
+    <h3 class="calc-t">Calculadora de Economia Fiscal</h3>
+    <div class="calc-s">Para nutricionistas autônomos</div>
+    <form onsubmit="return calcular(event)">
+      <div class="cc">
+        <label for="fat">Faturamento mensal (R$)</label>
+        <input type="number" id="fat" placeholder="Ex: 8000" min="0" step="100" aria-label="Faturamento mensal" required>
+      </div>
+      <div class="cc">
+        <label for="sit">Situação atual</label>
+        <select id="sit" aria-label="Situação atual">
+          <option value="autonomo">Autônomo (carnê-leão)</option>
+          <option value="simples_v">Simples Nacional — Anexo V (15,5%)</option>
+          <option value="mei">MEI</option>
+        </select>
+      </div>
+      <button type="submit" class="btn-calc">Calcular minha economia</button>
+    </form>
+    <div class="calc-res" id="res" role="region" aria-live="polite" aria-label="Resultado do cálculo">
+      <div class="rg">
+        <div class="ri">
+          <div class="rl">Você paga hoje</div>
+          <div class="rv ruim" id="atual">R$ 0</div>
+        </div>
+        <div class="ri">
+          <div class="rl">Com a Eleven</div>
+          <div class="rv bom" id="novo">R$ 0</div>
+        </div>
+      </div>
+      <div class="eco" id="eco-tx"></div>
+    </div>
+  </div>
+</section>
+
+<section class="s-prova">
+  <div class="lbl">Depoimentos</div>
+  <h2 class="ts">O que nossos clientes dizem</h2>
+  <p class="ss">Nutricionistas que pararam de pagar mais do que deviam.</p>
+  <div class="g-dep">
+    <article class="c-dep">
+      <span class="aspas">"</span>
+      <p class="dep-tx">Era autônoma e pagava mais de R$1.200 de imposto todo mês. Com a Eleven, abri meu CNPJ no Simples Nacional e reduzi para menos de R$500. Processo todo pelo WhatsApp.</p>
+      <div class="dep-au">
+        <div class="dep-av" aria-label="Avatar de Ana Mota">AM</div>
+        <div>
+          <div class="dep-nm">Ana Mota</div>
+          <div class="dep-cg">Nutricionista Clínica — Fortaleza/CE</div>
+        </div>
+      </div>
+    </article>
+    <article class="c-dep">
+      <span class="aspas">"</span>
+      <p class="dep-tx">Troquei de contador depois de anos pagando errado. A Eleven me explicou tudo, fez a regularização e hoje sei exatamente o que pago e por quê.</p>
+      <div class="dep-au">
+        <div class="dep-av" aria-label="Avatar de Rafael Nunes">RN</div>
+        <div>
+          <div class="dep-nm">Rafael Nunes</div>
+          <div class="dep-cg">Nutricionista Esportivo — Recife/PE</div>
+        </div>
+      </div>
+    </article>
+    <article class="c-dep">
+      <span class="aspas">"</span>
+      <p class="dep-tx">Abertura da empresa em menos de uma semana. Sem sair do consultório, sem papel, sem burocracia. Suporte rápido no WhatsApp sempre que preciso.</p>
+      <div class="dep-au">
+        <div class="dep-av" aria-label="Avatar de Juliana Pires">JP</div>
+        <div>
+          <div class="dep-nm">Juliana Pires</div>
+          <div class="dep-cg">Nutricionista Funcional — São Paulo/SP</div>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="s-dif">
+  <div class="lbl" style="justify-content:center">Por que a Eleven</div>
+  <h2 class="ts">Nossos diferenciais</h2>
+  <p class="ss" style="text-align:center;margin:0 auto 52px">Contabilidade feita por quem entende da sua realidade profissional.</p>
+  <div class="g-dif">
+    <article class="c-dif">
+      <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 11.73 19.79 19.79 0 0 1 1.61 3.2 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6 6l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <h4>WhatsApp direto</h4>
+      <p>Suporte humano e real via WhatsApp. Sem resposta automática, sem espera de dias, sem enrolação.</p>
+    </article>
+    <article class="c-dif">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+      <h4>100% digital</h4>
+      <p>Abertura de empresa, documentos e guias. Todo o processo online, sem sair do consultório.</p>
+    </article>
+    <article class="c-dif">
+      <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      <h4>Economia legal</h4>
+      <p>Reduzimos sua alíquota de 27,5% para menos de 11% dentro da lei, com a estrutura correta.</p>
+    </article>
+    <article class="c-dif">
+      <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+      <h4>Atendimento humanizado</h4>
+      <p>Cada nutricionista é tratado de forma individual. Entendemos a realidade de quem trabalha na saúde.</p>
+    </article>
+  </div>
+</section>
+
+<section class="s-cert">
+  <div class="lbl" style="justify-content:center">Confiança</div>
+  <h2 class="ts">Nos certificamos da melhor forma</h2>
+  <p class="ss" style="text-align:center">Somos especializados e comprometidos com a qualidade do serviço.</p>
+  <div class="cert-grid">
+    <article class="cert-item">
+      <div class="cert-icon">🏛️</div>
+      <h3>Registrados CFC</h3>
+      <p>Inscritos no Conselho Federal de Contabilidade com expertise em profissionais liberais.</p>
+    </article>
+    <article class="cert-item">
+      <div class="cert-icon">👥</div>
+      <h3>+500 Clientes</h3>
+      <p>Nutricionistas confiaram na Eleven para gerenciar sua contabilidade com excelência.</p>
+    </article>
+    <article class="cert-item">
+      <div class="cert-icon">⚖️</div>
+      <h3>100% Legal</h3>
+      <p>Todas as estratégias de economia fiscal estão em conformidade com as leis vigentes.</p>
+    </article>
+  </div>
+</section>
+
+<section class="s-ofer">
+  <article class="of-card">
+    <span class="of-tag">Oferta especial para nutricionistas</span>
+    <h2 class="of-titulo">Comece agora com<br><span>condição especial</span> para nutricionistas</h2>
+    <p class="of-tx">Abertura de empresa com taxa reduzida + primeiro mês de assessoria com desconto + suporte prioritário via WhatsApp.</p>
+    <ul class="of-lista">
+      <li>Abertura de empresa com taxa reduzida</li>
+      <li>Enquadramento no regime ideal</li>
+      <li>Configuração de emissor de nota fiscal</li>
+      <li>Suporte via WhatsApp</li>
+      <li>Assessoria contábil mensal</li>
+      <li>Processo 100% digital</li>
+    </ul>
+    <a href="https://wa.me/5585994276469?text=Olá!+Quero+a+oferta+especial+para+nutricionistas.+Pode+me+ajudar?" class="btn-of" target="_blank" rel="noopener noreferrer">
+      Quero essa oferta agora
+    </a>
+    <p class="of-info">Vagas limitadas — Atendimento em todo o Brasil</p>
+  </article>
+</section>
+
+<section class="s-faq">
+  <div class="lbl" style="justify-content:center">Dúvidas</div>
+  <h2 class="ts" style="text-align:center">Perguntas frequentes</h2>
+  <p class="ss" style="text-align:center;margin:0 auto 40px">Respostas diretas para as principais dúvidas de nutricionistas.</p>
+  <div class="faq-lista">
+    <article class="faq-item" onclick="faq(this)">
+      <div class="faq-p"><span>Quanto tempo leva para abrir minha empresa?</span><span class="faq-i">+</span></div>
+      <div class="faq-r">Em média 5 dias úteis após o envio de todos os documentos. O processo é feito de forma 100% digital e você não precisa comparecer a nenhum cartório ou órgão público.</div>
+    </article>
+    <article class="faq-item" onclick="faq(this)">
+      <div class="faq-p"><span>Nutricionista pode optar pelo Simples Nacional?</span><span class="faq-i">+</span></div>
+      <div class="faq-r">Sim. Nutricionistas normalmente iniciam no Simples Nacional pagando 15,5% (Anexo V). Com a estrutura correta, a Eleven consegue reduzir essa alíquota para 6% (Anexo III) de forma totalmente legal — sem nenhum artifício, apenas com o enquadramento adequado da sua empresa.</div>
+    </article>
+    <article class="faq-item" onclick="faq(this)">
+      <div class="faq-p"><span>Posso continuar atendendo como autônomo tendo CNPJ?</span><span class="faq-i">+</span></div>
+      <div class="faq-r">Sim, porém o ideal é que todo o faturamento passe pelo CNPJ para aproveitar a tributação menor. A Eleven te orienta sobre a melhor forma de estruturar seus recebimentos.</div>
+    </article>
+    <article class="faq-item" onclick="faq(this)">
+      <div class="faq-p"><span>Como funciona a troca de contador?</span><span class="faq-i">+</span></div>
+      <div class="faq-r">Você autoriza a Eleven a solicitar toda a documentação do contador anterior. Não há taxas de transferência e você não perde histórico contábil. O processo é feito por nós, sem trabalho para você.</div>
+    </article>
+    <article class="faq-item" onclick="faq(this)">
+      <div class="faq-p"><span>Atendem nutricionistas fora do Ceará?</span><span class="faq-i">+</span></div>
+      <div class="faq-r">Sim. A Eleven atende nutricionistas em todo o Brasil. O processo é 100% digital e o suporte é feito por WhatsApp, sem necessidade de presença física em nenhum momento.</div>
+    </article>
+    <article class="faq-item" onclick="faq(this)">
+      <div class="faq-p"><span>Preciso regularizar meu CNPJ anterior?</span><span class="faq-i">+</span></div>
+      <div class="faq-r">Se você já tem um CNPJ, a Eleven pode ajudar na regularização de pendências, débitos e até parcelamentos. Temos expertise em recuperação de situação cadastral junto à Receita Federal.</div>
+    </article>
+    <article class="faq-item" onclick="faq(this)">
+      <div class="faq-p"><span>Qual o valor da assessoria mensal?</span><span class="faq-i">+</span></div>
+      <div class="faq-r">Os planos variam conforme o faturamento e complexidade do negócio. Entre em contato via WhatsApp para receber uma proposta personalizada para o seu perfil sem compromisso.</div>
+    </article>
+  </div>
+</section>
+
+<footer>
+  <svg class="f-logo" viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg"><text x="10" y="40" font-size="32" font-weight="bold" fill="white" font-family="Georgia">ELEVEN</text></svg>
+  <div class="f-div"></div>
+  <p class="f-tx">Especialista em MEI, Simples Nacional e profissionais liberais</p>
+  <p class="f-tx">Fortaleza, Ceará — Atendimento em todo o Brasil</p>
+  <p class="f-tx" style="margin-top:6px;font-size:11px">ELEVEN CONTABILIDADE &amp; CONSULTORIA — Todos os direitos reservados © 2024</p>
+</footer>
+
+<a href="https://wa.me/5585994276469?text=Olá!+Vim+pelo+site+e+quero+falar+sobre+contabilidade+para+nutricionistas.+Pode+me+ajudar?" class="btn-fl" target="_blank" rel="noopener noreferrer" aria-label="Abrir conversa no WhatsApp">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  Falar no WhatsApp
+</a>
+
+<script>
+function calcular(event){
+  event.preventDefault();
+  var f=parseFloat(document.getElementById('fat').value)||0;
+  var s=document.getElementById('sit').value;
+  var el=document.getElementById('res');
+  if(f<=0){alert('Informe seu faturamento mensal.');return false;}
+  var ia=0;
+  if(s==='autonomo'){
+    if(f<=1903.98)ia=0;
+    else if(f<=2826.65)ia=f*.075-142.80;
+    else if(f<=3751.05)ia=f*.15-354.80;
+    else if(f<=4664.68)ia=f*.225-636.13;
+    else ia=f*.275-869.36;
+  }else if(s==='simples_v'){ia=f*.155;}
+  else{ia=72.90;}
+  var in2=f*.09;
+  var eco=ia-in2;
+  var eco12=eco*12;
+  el.classList.add('vis');
+  document.getElementById('atual').textContent='R$ '+Math.round(ia).toLocaleString('pt-BR');
+  document.getElementById('novo').textContent='R$ '+Math.round(in2).toLocaleString('pt-BR');
+  if(eco>0){
+    document.getElementById('eco-tx').innerHTML='🎉 Você pode economizar <strong>R$ '+Math.round(eco).toLocaleString('pt-BR')+' por mês</strong> — isso representa <strong>R$ '+Math.round(eco12).toLocaleString('pt-BR')+' por ano</strong> que ficam no seu bolso!';
+  }else{
+    document.getElementById('eco-tx').innerHTML='Fale com a Eleven para analisar as melhores opções para o seu perfil.';
+  }
+  return false;
+}
+
+function faq(el){
+  var open=el.classList.contains('aberto');
+  document.querySelectorAll('.faq-item').forEach(function(x){x.classList.remove('aberto');});
+  if(!open)el.classList.add('aberto');
+}
+
+// Analytics simples
+if(typeof localStorage!=='undefined'){
+  localStorage.setItem('lastVisit',new Date().toISOString());
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Eleven Contabilidade",
+  "description": "Contabilidade especializada para nutricionistas. Redução de impostos de 27,5% para menos de 11%.",
+  "url": "https://elevencontabilidade.com.br",
+  "telephone": "+55-85-99427-6469",
+  "areaServed": "BR",
+  "email": "contato@elevencontabilidade.com.br",
+  "priceRange": "Conforme perfil",
+  "serviceType": "Contabilidade e Consultoria Fiscal",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5",
+    "ratingCount": "500"
+  }
+}
+</script>
+
+</body>
+</html>
